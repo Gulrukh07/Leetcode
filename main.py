@@ -459,28 +459,6 @@ https://leetcode.com/problems/defanging-an-ip-address/?envType=problem-list-v2&e
 # print("[.]".join(address.split('.')))
 
 """
-🔴https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/?envType=problem-list-v2&envId=array
-"""
-# nums = [1,1,2]
-# if len(nums) != len(set(nums)):
-#     diff = len(nums) - len(set(nums))
-#     nums.extend(['_'] * diff)
-#     print(len(set(nums))- diff, nums)
-
-"""
-🔴https://leetcode.com/problems/contains-duplicate-ii/?envType=problem-list-v2&envId=array
-"""
-# nums = [1, 2, 3, 1]
-# k = 3
-
-"""
-🔴https://leetcode.com/problems/ransom-note/?envType=problem-list-v2&envId=hash-table
-"""
-# ransomNote = "aa"
-# magazine = "aab"
-# print((not Counter(ransomNote) - Counter(magazine)))
-
-"""
 https://leetcode.com/problems/move-zeroes/description/?envType=problem-list-v2&envId=array
 """
 # nums = [0,1,0,3,12]
@@ -1740,13 +1718,3 @@ https://leetcode.com/problems/first-letter-to-appear-twice/description/?envType=
 #                 min_diff = diff
 #                 min_val = v
 
-
-"""
-echo "# Leetcode" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Gulrukh07/Leetcode.git
-git push -u origin main
-"""
