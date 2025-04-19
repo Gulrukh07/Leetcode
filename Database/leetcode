@@ -1,0 +1,25 @@
+https://leetcode.com/problems/combine-two-tables/description/
+
+select p.firstName as firstName, p.lastName as lastName, a.city, a.state
+ from Person p left join Address a using(personId);
+
+--------------------------------------------------------
+https://leetcode.com/problems/customers-who-never-order/description/
+
+select c.name as Customers from Customers c
+ left join Orders o on o.customerId = c.id where o.customerId Is Null;
+
+------------------------------------------------------------------
+https://leetcode.com/problems/duplicate-emails/description/
+
+select email as Email from Person group by email having count(id) >= 2;
+
+
+----------------------------------------------------------------
+https://leetcode.com/problems/top-travellers/
+
+select u.name, coalesce(sum(distance),0) travelled_distance
+from Users u
+left join Rides r on u.id = r.user_id
+group by u.name
+order by travelled_distance desc, u.name;
