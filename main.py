@@ -175,7 +175,7 @@ Paskal uchburchagining dastlabki n ta qatorini toping.
 #     r = tmp
 # print(paskal)
 
-#----------------------------------------------------------------
+# ----------------------------------------------------------------
 # def generate_row(prev):
 #     next_row = [1]
 #     for i in range(len(prev) -1):
@@ -262,6 +262,7 @@ Array // 47.
 https://leetcode.com/problems/array-partition/description/?envType=problem-list-v2&envId=array
 """
 from itertools import permutations
+
 # nums = [6,2,6,5,1,2]
 # nums.sort()
 # pairs = []
@@ -311,7 +312,6 @@ https://leetcode.com/problems/find-the-difference/description/?envType=problem-l
 #         break
 # else:
 #     print(t[-1])
-
 
 
 """Hash Table
@@ -771,7 +771,7 @@ https://leetcode.com/problems/find-target-indices-after-sorting-array/descriptio
 #     if num == target:
 #         res.append(i)
 # print(res)
-#=============================================
+# =============================================
 # left = 0
 # right = len(nums) -1
 # while left <= right:
@@ -871,7 +871,7 @@ https://leetcode.com/problems/number-of-senior-citizens/description/?envType=pro
 #     if int(age) > 60:
 #         count += 1
 # print(count)
-#======================
+# ======================
 # for detail in details:
 #     if int(detail[-4:-2]) > 60:
 #         count += 1
@@ -898,6 +898,7 @@ https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occur
 https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/description/?envType=problem-list-v2&envId=hash-table
 """
 from itertools import permutations
+
 # nums = [3,2,1,5,4]
 # k = 2
 # count = 0
@@ -1066,6 +1067,7 @@ https://leetcode.com/problems/relative-ranks/description/?envType=problem-list-v
 https://leetcode.com/problems/maximum-product-of-three-numbers/description/?envType=problem-list-v2&envId=array
 """
 from math import prod
+
 # nums = [-100,-98,-1,2,3,4]
 # combs = combinations(nums, 3)
 # print(prod(max(combs, key=lambda x: prod(x))))
@@ -1400,7 +1402,7 @@ https://leetcode.com/problems/rank-transform-of-an-array/description/?envType=pr
 #         res.append(d.get(i))
 # print(res)
 
-#=============================================================================
+# =============================================================================
 """
 https://leetcode.com/problems/unique-number-of-occurrences/description/?envType=problem-list-v2&envId=array
 """
@@ -1409,7 +1411,7 @@ https://leetcode.com/problems/unique-number-of-occurrences/description/?envType=
 # print(len(c.values()) ==  len(set(c.values())))
 
 
-#========================================================
+# ========================================================
 """
 https://leetcode.com/problems/special-array-i/description/?envType=problem-list-v2&envId=array
 """
@@ -1654,7 +1656,6 @@ https://leetcode.com/problems/decode-the-message/description/?envType=problem-li
 # print(my_dict)
 
 
-
 """
 https://leetcode.com/problems/percentage-of-letter-in-string/?envType=problem-list-v2&envId=string
 """
@@ -1687,16 +1688,11 @@ https://leetcode.com/problems/delete-columns-to-make-sorted/description/?envType
 #         count += 1
 # print(count)
 
-"""
-https://leetcode.com/problems/find-common-characters/description/?envType=problem-list-v2&envId=string
-"""
-
-words = ["bella","label","roller"]
 
 """
 https://leetcode.com/problems/first-letter-to-appear-twice/description/?envType=problem-list-v2&envId=string
 """
-#
+
 # s = "abccbaacz"
 # my_dict = {}
 # for i in range(len(s)):
@@ -1705,16 +1701,21 @@ https://leetcode.com/problems/first-letter-to-appear-twice/description/?envType=
 #     else:
 #         my_dict[s[i]].append(i)
 #
-# print(my_dict)
+# lists = [val for val in list(my_dict.values()) if len(val) >= 2]
+# minn = min(lists, key= lambda x: x[1])
 # for key, val in my_dict.items():
-#     if len(val) < 2:
-#         continue
-#     else:
-#         min_diff = 0
-#         min_val = 0
-#         for v in val:
-#             diff =val[1]-val[0]
-#             if diff < min_diff:
-#                 min_diff = diff
-#                 min_val = v
+#     if val == minn:
+#         print(key)
+
+"""
+https://leetcode.com/problems/robot-return-to-origin/description/?envType=problem-list-v2&envId=string
+"""
+# moves = "LL"
+#
+# move_count = Counter(moves)
+# print(move_count)
+# if move_count['U'] == move_count['D'] and move_count["L"] == move_count['R']:
+#     print(True)
+# else:
+#     print(False)
 
