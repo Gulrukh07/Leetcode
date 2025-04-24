@@ -81,3 +81,13 @@ https://leetcode.com/problems/recyclable-and-low-fat-products/description/?envTy
 SELECT product_id
 FROM products
 where low_fats = 'Y'and recyclable = 'Y';
+
+
+---------------------------------------------------------------------
+https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT v.customer_id , count(v.customer_id) count_no_trans
+From Visits v
+Left JOIN Transactions t using(visit_id)
+group by v.customer_id, transaction_id
+HAVING transaction_id is null order by customer_id;
