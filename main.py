@@ -1275,11 +1275,6 @@ https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/descri
 # print(result)
 
 """
-https://leetcode.com/problems/rings-and-rods/description/?envType=problem-list-v2&envId=string
-"""
-# rings = "B0B6G0R6R0R6G9"
-
-"""
 https://leetcode.com/problems/find-first-palindromic-string-in-the-array/description/?envType=problem-list-v2&envId=string
 """
 # words = ["abc","car","ada","racecar","cool"]
@@ -1719,3 +1714,66 @@ https://leetcode.com/problems/robot-return-to-origin/description/?envType=proble
 # else:
 #     print(False)
 
+
+"""
+https://leetcode.com/problems/find-maximum-number-of-string-pairs/description/?envType=problem-list-v2&envId=string
+"""
+# words = ["cd","ac","dc","ca","zz"]
+# words = ["ff","tx","qr","zw","wr","jr","zt","jk","sq","xx"]
+# copied = words.copy()
+# count_ = 0
+# for i in range(len(words)):
+#     if len(set(words[i])) == 1 and words.count(words[i]) != 2:
+#         continue
+#     else:
+#         if words[i][::-1] in words:
+#             count_ += 1
+#
+# print(count_//2)
+
+
+"""
+https://leetcode.com/problems/unique-morse-code-words/description/?envType=problem-list-v2&envId=string
+"""
+
+# words = ["gin","zen","gig","msg"]
+# dict_ = {'a':".-", 'b':"-...", 'c':"-.-.", 'd':"-..", 'e':".", 'f':"..-.", 'g':"--.", 'h':"....", 'i':"..", 'j':".---",
+#          'k':"-.-", 'l':".-..", 'm':"--", 'n':"-.", 'o':"---", 'p':".--.", 'q':"--.-", 'r':".-.", 's':"...", 't':"-",
+#          'u':"..-", 'v':"...-", 'w':".--", 'x':"-..-", 'y':"-.--", 'z':"--.."}
+# res = []
+# tmp = ''
+# for word in words:
+#     for char in word:
+#         tmp += dict_[char]
+#     res.append(tmp)
+#     tmp = ''
+# print(len(set(res)))
+
+
+"""
+https://leetcode.com/problems/find-common-characters/description/?envType=problem-list-v2&envId=string
+"""
+# words = ["bella","label","roller"]
+# count = Counter(words[0])
+# result = []
+# for i in range(1,len(words)):
+#     count &= Counter(words[i])
+# for k,v in count.items():
+#     result.extend(k*v)
+# print(result)
+
+
+"""
+https://leetcode.com/problems/maximum-number-of-balloons/description/
+"""
+# text = "loonbalxballpoon"
+# w = 'balloon'
+# print(min(text.count('b'),text.count('a'),text.count('l')//2,text.count('o')//2,text.count('n')))
+
+
+# x = -123
+# x = str(x).strip('-')
+# if x[0] == '-':
+#     print(int(x[:1:-1]))
+# else:
+# print(int(x[::-1]))
