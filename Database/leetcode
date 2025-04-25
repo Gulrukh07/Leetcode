@@ -91,3 +91,37 @@ From Visits v
 Left JOIN Transactions t using(visit_id)
 group by v.customer_id, transaction_id
 HAVING transaction_id is null order by customer_id;
+
+---------------------------------------------------------------------------------------------------
+https://leetcode.com/problems/not-boring-movies/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT *
+FROM Cinema
+Where id % 2 != 0 and description != 'boring'
+ORDER BY rating desc;
+
+
+------------------------------------------------------------------------------------------
+https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/?envType=study-plan-v2&envId=top-sql-50
+
+select  teacher_id, count(distinct subject_id) cnt
+from Teacher
+group by teacher_id;
+
+
+--------------------------------------------------------------------------------------
+https://leetcode.com/problems/employee-bonus/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT e.name, b.bonus
+FROM Employee e
+LEFT JOIN Bonus b USING(empID)
+where b.bonus < 1000 or b.bonus is null;
+
+
+--------------------------------------------------------------------------
+https://leetcode.com/problems/user-activity-for-the-past-30-days-i/description/?envType=study-plan-v2&envId=top-sql-50
+
+SELECT  activity_date as day,  count(distinct user_id) active_users
+FROM Activity
+WHERE activity_date BETWEEN '2019-06-28' and '2019-07-27'
+GROUP BY 1;

@@ -1770,6 +1770,9 @@ https://leetcode.com/problems/maximum-number-of-balloons/description/
 # w = 'balloon'
 # print(min(text.count('b'),text.count('a'),text.count('l')//2,text.count('o')//2,text.count('n')))
 
+"""
+https://leetcode.com/problems/reverse-integer/description/
+"""
 
 # x = -123
 # x = str(x).strip('-')
@@ -1777,3 +1780,10 @@ https://leetcode.com/problems/maximum-number-of-balloons/description/
 #     print(int(x[:1:-1]))
 # else:
 # print(int(x[::-1]))
+
+"""
+https://leetcode.com/problems/rotate-array/description/
+"""
+nums = [1,2,3,4,5,6,7]
+k = 3
+print(nums[-k:] + nums[:-k])
