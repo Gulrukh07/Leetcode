@@ -1782,8 +1782,50 @@ https://leetcode.com/problems/reverse-integer/description/
 # print(int(x[::-1]))
 
 """
-https://leetcode.com/problems/rotate-array/description/
+https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=problem-list-v2&envId=string
 """
-nums = [1,2,3,4,5,6,7]
-k = 3
-print(nums[-k:] + nums[:-k])
+# s = 'hello'
+# my_ = []
+# for i in range(len(s)-1):
+#     res = abs(ord(s[i]) - ord(s[i+1]))
+#     my_.append(res)
+# print(sum(my_))
+
+
+# dividend = 10
+# divisor = 3
+#
+# if divisor == 0:
+#     raise ValueError("divisor cannot be zero")
+# negative = (dividend<0) != (dividend<0)
+#
+# dividend = abs(dividend)
+# divisor = abs(divisor)
+# result = 0
+#
+# while dividend >= divisor:
+#     dividend -= divisor
+#     result += 1
+#
+# print(-floor(result )if negative else floor(result))
+
+
+#https://leetcode.com/problems/longest-common-prefix/
+
+strs = ["dog","racecar","car"]
+word = min(strs, key=len)
+res = ''
+r = ''
+for i in range(len(word)):
+    for str in strs:
+        if word[i] == str[i]:
+            res += word[i]
+    if len(res) < len(strs):
+        break
+    r +=res[0]
+    res = ''
+print(r)
+
+
+
+
