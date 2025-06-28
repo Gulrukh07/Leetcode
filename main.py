@@ -1812,20 +1812,36 @@ https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=
 
 #https://leetcode.com/problems/longest-common-prefix/
 
-strs = ["dog","racecar","car"]
-word = min(strs, key=len)
-res = ''
-r = ''
-for i in range(len(word)):
-    for str in strs:
-        if word[i] == str[i]:
-            res += word[i]
-    if len(res) < len(strs):
-        break
-    r +=res[0]
-    res = ''
-print(r)
+# strs = ["dog","racecar","car"]
+# word = min(strs, key=len)
+# res = ''
+# r = ''
+# for i in range(len(word)):
+#     for str in strs:
+#         if word[i] == str[i]:
+#             res += word[i]
+#     if len(res) < len(strs):
+#         break
+#     r +=res[0]
+#     res = ''
+# print(r)
 
+
+#https://leetcode.com/problems/excel-sheet-column-number/description/
+
+# letters = string.ascii_uppercase
+# dict_ = {}
+# for index, val in enumerate(letters):
+#     dict_[val] = index+1
+#
+# res = 0
+# columnTitle = "AAA"
+# i = len(columnTitle)-1
+# for letter in columnTitle:
+#     val_letter = dict_[letter]
+#     res += val_letter * 26**i
+#     i -= 1
+# print(res)
 
 
 
