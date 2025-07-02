@@ -1843,5 +1843,44 @@ https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=
 #     i -= 1
 # print(res)
 
+# https://leetcode.com/problems/duplicate-zeros/description/
+#
+# arr = [1,0,2,3,0,4,5,0]
+# arr =[0,1,7,6,0,2,0,7]
+# arr = [8,5,0,9,0,3,4,7]
+# k = len(arr)
+# i = 0
+# while i <= k-2:
+#     if arr[i] == 0:
+#         arr.insert(i+1, 0)
+#         i += 2
+#     else:
+#         i += 1
+# print(arr[:k])
+
+#  in leetcode : arr[:] = arr[:k] in place change: in one memory location
+
+
+# https://leetcode.com/problems/find-the-town-judge/description/
+
+# n = 4
+# trust = [[1,3],[1,4],[2,3],[2,4],[4,3]]
+# n = 3
+# trust = [[1,3],[2,3],[3,1]]
+# if n == 1:
+#     print(n)
+# elif n==2 and len(trust) == 0:
+#     print(-1)
+# else:
+#     list_ = [t[0] for t in trust]
+#     judge =[t[1] for t in trust]
+#     count_ =Counter(judge)
+#     judge_most_voices = max(count_, key=count_.get)
+#     num_of_voices = count_.get(judge_most_voices)
+#
+#     if num_of_voices == n-1 and judge_most_voices not in list_:
+#         print(judge_most_voices)
+#     else:
+#         print(-1)
 
 
