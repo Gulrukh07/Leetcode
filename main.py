@@ -1884,3 +1884,30 @@ https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=
 #         print(-1)
 
 
+# https://leetcode.com/problems/counting-bits/description/
+#
+# n = 2
+# res = []
+# bin_nums = {i: bin(i)[2:] for i in range(n+1)}
+# print(bin_nums)
+# for value in bin_nums.values():
+#     summ = 0
+#     for char in value:
+#         summ += int(char)
+#     res.append(summ)
+#
+# print(res)
+
+# https://leetcode.com/problems/number-of-1-bits/description/
+
+# n = 11
+# print(bin(n)[2:].count('1'))
+
+#https://leetcode.com/problems/power-of-two/description/
+n= 6
+
+# https://leetcode.com/problems/convert-the-temperature/description/
+# celsius = 36.50
+#
+# print([celsius + 273.15, celsius *1.80 + 32.00])
+
