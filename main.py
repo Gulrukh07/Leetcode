@@ -4,9 +4,10 @@ The majority element is the element that appears more than ⌊n / 2⌋ times. Yo
 the majority element always exists in the array.
 169/Array
 """
+import math
 import random
 from collections import Counter, defaultdict
-from math import gcd, floor
+from math import gcd, floor, log
 
 # n = int(input("Size if List:"))
 # list_ = []
@@ -1903,11 +1904,28 @@ https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=
 # n = 11
 # print(bin(n)[2:].count('1'))
 
-#https://leetcode.com/problems/power-of-two/description/
-n= 6
 
 # https://leetcode.com/problems/convert-the-temperature/description/
 # celsius = 36.50
 #
 # print([celsius + 273.15, celsius *1.80 + 32.00])
 
+#https://leetcode.com/problems/power-of-two/description/
+n= 6
+power = math.log(n, 2)
+
+# if n <= 0:
+#     print(False)
+# if int(power) ** 2 == n:
+#     print(True)
+# else:
+#     print(False)
+
+# https://leetcode.com/problems/partition-array-according-to-given-pivot/description/
+nums = [9,12,5,10,14,3,10]
+tens = nums.count(10)
+pivot = 10
+gr = [num for num in nums if num > pivot]
+lr = [num for num in nums if num < pivot]
+e =  [num for num in nums if num == pivot]
+print(lr + e + gr)
