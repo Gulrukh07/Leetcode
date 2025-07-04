@@ -1922,10 +1922,25 @@ power = math.log(n, 2)
 #     print(False)
 
 # https://leetcode.com/problems/partition-array-according-to-given-pivot/description/
-nums = [9,12,5,10,14,3,10]
-tens = nums.count(10)
-pivot = 10
-gr = [num for num in nums if num > pivot]
-lr = [num for num in nums if num < pivot]
-e =  [num for num in nums if num == pivot]
-print(lr + e + gr)
+# nums = [9,12,5,10,14,3,10]
+# tens = nums.count(10)
+# pivot = 10
+# gr = [num for num in nums if num > pivot]
+# lr = [num for num in nums if num < pivot]
+# e =  [num for num in nums if num == pivot]
+# print(lr + e + gr)
+
+# https://leetcode.com/problems/number-complement/
+# n= 5
+# binary = bin(n)[2:]
+# print(binary)
+
+# https://leetcode.com/problems/transform-array-by-parity/description/
+nums = [4,3,2,1]
+
+for i in range(len(nums)):
+    if nums[i] % 2 == 0:
+        nums[i] = 0
+    else:
+        nums[i] = 1
+print(sorted(nums))
