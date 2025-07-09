@@ -1979,4 +1979,8 @@ power = math.log(n, 2)
 #     summ += reversed_dict.get(value) * (index+1)
 # print(summ)
 
+# https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/description/
+n = 234
 
+digits = [int(i) for i in str(n)]
+print(math.prod(digits) - sum(digits))
