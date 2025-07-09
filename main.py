@@ -1979,8 +1979,3 @@ power = math.log(n, 2)
 #     summ += reversed_dict.get(value) * (index+1)
 # print(summ)
 
-#https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
-nums =[8,1,2,2,3]
-nums.sort()
-for i in range(len(nums)):
-    if nums[]
