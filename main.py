@@ -1979,3 +1979,4 @@ power = math.log(n, 2)
 #     summ += reversed_dict.get(value) * (index+1)
 # print(summ)
 
+
