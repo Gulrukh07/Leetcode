@@ -1936,11 +1936,51 @@ power = math.log(n, 2)
 # print(binary)
 
 # https://leetcode.com/problems/transform-array-by-parity/description/
-nums = [4,3,2,1]
+# nums = [4,3,2,1]
+#
+# for i in range(len(nums)):
+#     if nums[i] % 2 == 0:
+#         nums[i] = 0
+#     else:
+#         nums[i] = 1
+# print(sorted(nums))
 
+# https://leetcode.com/problems/sqrtx/description/
+# print(int(math.sqrt(8)))
+
+# https://leetcode.com/problems/divisor-game/description/
+# n=2
+# print(n%2 == 0)
+
+# https://leetcode.com/problems/hamming-distance/description/
+# x = 3
+# y = 5
+# x_bin = bin(x)[2:]
+# y_bin = bin(y)[2:]
+# length = len(max(x_bin, y_bin, key=len))
+# x_bin = x_bin.zfill(length)
+# y_bin = y_bin.zfill(length)
+# count_ = 0
+# for i in range(len(x_bin)):
+#     if x_bin[i] != y_bin[i]:
+#         count_ += 1
+# print(count_)
+
+#https://leetcode.com/problems/reverse-degree-of-a-string/description/
+# s = "zaza"
+# alphabet = string.ascii_lowercase
+#
+# reversed_dict = {}
+# for index, value in enumerate(reversed(alphabet)):
+#     reversed_dict[value] = index+1
+# print(reversed_dict)
+# summ = 0
+# for index, value in enumerate(s):
+#     summ += reversed_dict.get(value) * (index+1)
+# print(summ)
+
+#https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/description/
+nums =[8,1,2,2,3]
+nums.sort()
 for i in range(len(nums)):
-    if nums[i] % 2 == 0:
-        nums[i] = 0
-    else:
-        nums[i] = 1
-print(sorted(nums))
+    if nums[]
