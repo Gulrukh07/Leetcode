@@ -1314,20 +1314,6 @@ https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/description/
 # b = 'ba'
 # print(b not in s)
 
-"""
-https://leetcode.com/problems/sum-of-digits-of-string-after-convert/description/?envType=problem-list-v2&envId=string
-"""
-# letters = string.ascii_lowercase
-# s = "leetcode"
-# k = 2
-# nums = ""
-# for i in s:
-#     nums += str(letters.index(i)+1)
-# i = 0
-# while i< k:
-#     nums = str(sum(int(num) for num in nums))
-#     i += 1
-# print(nums)
 
 """
 https://leetcode.com/problems/running-sum-of-1d-array/description/?envType=problem-list-v2&envId=array
@@ -1980,7 +1966,66 @@ power = math.log(n, 2)
 # print(summ)
 
 # https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/description/
-n = 234
+# n = 234
 
-digits = [int(i) for i in str(n)]
-print(math.prod(digits) - sum(digits))
+# digits = [int(i) for i in str(n)]
+# print(math.prod(digits) - sum(digits))
+
+# https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/description/
+
+# num = 4009
+#
+# numstr = str(num)
+# sorted_num =list(sorted(numstr))
+# num1 = sorted_num[0] + sorted_num[2]
+# num2 = sorted_num[1] + sorted_num[3]
+# res = int(num1) + int(num2)
+# print(res)
+
+# https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/description/
+
+# nums = [1,2,3,4]
+#
+# summ = sum(nums)
+# digit_sum = 0
+# for num in nums:
+#     if num > 9:
+#         for n in str(num):
+#             digit_sum += int(n)
+#     else:
+#         digit_sum += num
+# print(abs(summ - digit_sum))
+
+# https://leetcode.com/problems/add-digits/description/
+# num = 0
+# while num > 9:
+#     result = 0
+#     for n in str(num):
+#         result += int(n)
+#     num = result
+# print( num)
+
+# https://leetcode.com/problems/sum-of-digits-of-string-after-convert/
+
+# s = "iiii"
+# k = 1
+#
+# letters = string.ascii_lowercase
+# indexes = ''
+# for i in s:
+#     indexes += str(letters.index(i)+1)
+# res= 0
+# i = 0
+# while i < k:
+#     for index in indexes:
+#         res += int(index)
+#     indexes = str(res)
+#     res = 0
+#     i += 1
+# print(indexes)
+
+# https://leetcode.com/problems/count-integers-with-even-digit-sum/description/
+num = 4
+
+
+
