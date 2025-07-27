@@ -134,3 +134,11 @@ set sex = case
 when sex='f' then 'm'
 when sex='m' then 'f'
 end
+
+
+----------------------------------------------------
+https://leetcode.com/problems/game-play-analysis-i/
+
+select player_id, min(event_date) as first_login
+ from Activity
+ group by player_id;

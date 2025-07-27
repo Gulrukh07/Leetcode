@@ -1897,8 +1897,8 @@ https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=
 # print([celsius + 273.15, celsius *1.80 + 32.00])
 
 #https://leetcode.com/problems/power-of-two/description/
-n= 6
-power = math.log(n, 2)
+# n= 6
+# power = math.log(n, 2)
 
 # if n <= 0:
 #     print(False)
@@ -2025,7 +2025,122 @@ power = math.log(n, 2)
 # print(indexes)
 
 # https://leetcode.com/problems/count-integers-with-even-digit-sum/description/
-num = 4
+# num = 30
+# count_ = 0
+# for i in range(1, num+1):
+#     if i < 9 and i % 2 == 0:
+#         count_ += 1
+#     elif i > 9:
+#         n = str(i)
+#         res = 0
+#         for j in n:
+#             res += int(j)
+#         if res % 2 == 0 and res <= num:
+#             count_ += 1
+# print(count_)
+
+# https://leetcode.com/problems/find-the-distance-value-between-two-arrays/description/
+# arr1 = [4,5,8]
+# arr2 = [10,9,1,8]
+# d = 2
+#
+# count_ = 0
+# for num in arr1:
+#     res = []
+#     for n in arr2:
+#         summ = abs(num - n)
+#         if not summ <= d:
+#             res.append(summ)
+#     if len(res) == len(arr2):
+#         count_ += 1
+#     res = []
+# print(count_)
 
 
+# https://leetcode.com/problems/fibonacci-number/
+# n = 7
+# def fibonacci(n):
+#     while n <= 1:
+#         return(n)
+#     return fibonacci(n-1) + fibonacci(n-2)
+#
+# print(fibonacci(n))
+
+# https://leetcode.com/problems/perfect-number/
+# num = 28
+# print(sum([i for i in range(1, num//2+1) if num % i == 0]) == num)
+#
+#
+# def func(n):
+#     if num < 2:
+#         return False
+#     total = 1
+#     for i in range(2, int(num**0.5) + 1):
+#         if num % i == 0:
+#             total += i
+#             if i != num // i:
+#                 total += num // i
+#     return total == num
+
+# https://leetcode.com/problems/detect-capital/
+
+# word='FlaG'
+# print(word.isupper() or word.islower() or word[0].isupper() & word[1:].islower())
+
+# https://leetcode.com/problems/power-of-four/
+
+# n= 4
+
+# power = math.log(n, 4)
+# if n == 1 and n == 4:
+#     print(True)
+# if n < 4:
+#     print(False)
+# print(4 ** int(power) == n)
+
+# https://leetcode.com/problems/power-of-three/description/
+# n = 59049
+# if n == 1 and n == 3:
+#     print(True)
+# if n < 3:
+#     print(False)
+# else:
+#     power = math.log(n, 3)
+#     print(power)
+#     print(3 ** int(power) == n)
+#
+# print(3 **10)
+
+#https://leetcode.com/problems/long-pressed-name/description/
+
+# name = "saeed"
+# typed = "ssaaedd"
+#
+# name_ =Counter(name)
+# typed_ = Counter(typed)
+# res = ''
+# for key, val in typed_.items():
+#     if name_.get(key) <= val:
+#         res += key
+# print(res == name)
+
+num1 = '999'
+num2 = '99'
+
+maxx = max(len(num1), len(num2))
+num1 = num1.zfill(maxx)
+num2 = num2.zfill(maxx)
+
+res = ''
+n = 0
+
+for i in range(maxx - 1, -1, -1):
+    summ = int(num1[i]) + int(num2[i]) + n
+    res += str(summ % 10)
+    n = summ // 10
+
+if n:
+    res += str(n)
+
+print(res[::-1])
 
