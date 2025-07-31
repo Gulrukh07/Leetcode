@@ -2123,24 +2123,66 @@ https://leetcode.com/problems/score-of-a-string/submissions/1617619134/?envType=
 #     if name_.get(key) <= val:
 #         res += key
 # print(res == name)
+#
+# num1 = '999'
+# num2 = '99'
+#
+# maxx = max(len(num1), len(num2))
+# num1 = num1.zfill(maxx)
+# num2 = num2.zfill(maxx)
+#
+# res = ''
+# n = 0
+#
+# for i in range(maxx - 1, -1, -1):
+#     summ = int(num1[i]) + int(num2[i]) + n
+#     res += str(summ % 10)
+#     n = summ // 10
+#
+# if n:
+#     res += str(n)
+#
+# print(res[::-1])
+#
 
-num1 = '999'
-num2 = '99'
+#https://leetcode.com/problems/concatenation-of-array/description/
 
-maxx = max(len(num1), len(num2))
-num1 = num1.zfill(maxx)
-num2 = num2.zfill(maxx)
+# nums = [1,2,1]
+#
+# print(nums*2)
 
-res = ''
-n = 0
+# https://leetcode.com/problems/number-of-employees-who-met-the-target/description/
 
-for i in range(maxx - 1, -1, -1):
-    summ = int(num1[i]) + int(num2[i]) + n
-    res += str(summ % 10)
-    n = summ // 10
+# hours = [0,1,2,3,4]
+# target = 2
+# count_ = 0
+# for hour in hours:
+#     if hour >= target:
+#         count_ += 1
+# print(count_)
 
-if n:
-    res += str(n)
+#https://leetcode.com/problems/separate-the-digits-in-an-array/description/
+# nums = [13,25,83,77]
+# res = []
+# for num in nums:
+#     if num > 9:
+#         for i in str(num):
+#             res.append(int(i))
+#     else:
+#         res.append(num)
 
-print(res[::-1])
+# print(res)
+
+
+# https://leetcode.com/problems/sum-of-squares-of-special-elements/description/
+
+# nums = [1,2,3,4]
+# n = len(nums)
+# res = 0
+# for i in range(n):
+#     num = i +1
+#     if n % num == 0:
+#         res += nums[i] ** 2
+#
+# print(res)
 
